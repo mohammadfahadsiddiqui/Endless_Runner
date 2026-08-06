@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DesertRun.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/StageSelect.unity
+    guid: 646e8279eec9f254aaca13284d55e632
+  - enabled: 1
+    path: Assets/Scenes/Information.unity
+    guid: 936d11a257098a847b54536e2cbe316b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0

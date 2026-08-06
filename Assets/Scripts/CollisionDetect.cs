@@ -11,11 +11,13 @@ public class CollisionDetect : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        SaveLoad.saveData = true;
         StartCoroutine(CollisionEnd());
     }
 
     IEnumerator CollisionEnd()
     {
+        MasterInfo.distanceRun -= 1;
         collisionFX.Play();
         thePlayer.GetComponent<PlayerMovement>().enabled = false;
         playerAnim.GetComponent<Animator>().Play("Stumble Backwards");
@@ -25,5 +27,4 @@ public class CollisionDetect : MonoBehaviour
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene(0);
     }
-
 }
